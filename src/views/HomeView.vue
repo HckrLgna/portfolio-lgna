@@ -5,6 +5,8 @@
       <Hero />
       <services />
       <Projects />
+      <AboutMe />
+      <ContactMe />
     </div>
     <Footer></Footer>
   </div>
@@ -17,6 +19,8 @@ import NavBar from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import Services from '@/components/Services.vue'
 import Projects from '@/components/Projects.vue'
+import AboutMe  from '@/components/AboutMe.vue'
+import ContactMe from '@/components/ContactMe.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -24,7 +28,9 @@ export default {
     NavBar,
     Services,
     Projects,
-    Footer
+    Footer,
+    AboutMe,
+    ContactMe
   }
 }
 </script>

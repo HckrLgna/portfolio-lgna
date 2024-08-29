@@ -1,0 +1,61 @@
+{
+    "projects":[
+        {
+            "title": "Personal Portfolio",
+            "description": "This is a project",
+            "image": "project1.jpg",
+            "url_live": "https://www.google.com",
+            "url_github": "https://www.google.com",
+            "technologies": [
+                {
+                    "name": "VueJS",
+                    "color": "#3F8E8B"
+                },
+                {
+                    "name": "Firebase",
+                    "color": "#F2C230"
+                }
+            ]
+        },
+        {
+            "title": "Project 1",
+            "description": "This is a project",
+            "image": "project1.jpg",
+            "url_live": "https://www.google.com",
+            "url_github": "https://www.google.com",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "color": "#E44D26"
+                }
+            ]
+        },
+        {
+            "title": "Project 1",
+            "description": "This is a project",
+            "image": "project1.jpg",
+            "url_live": "https://www.google.com",
+            "url_github": "https://www.google.com",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "color": "#E44D26"
+                }
+            ]
+        },
+        {
+            "title": "Project 1",
+            "description": "This is a project",
+            "image": "project1.jpg",
+            "url_live": "https://www.google.com",
+            "url_github": "https://www.google.com",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "color": "#E44D26"
+                }
+            ]
+        }
+        
+    ]
+}
