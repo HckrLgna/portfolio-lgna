@@ -8,7 +8,7 @@
         <h3 style="color: #16805E;">{{title}}</h3>
         <p >{{ description }}</p>
       </div>
-      <div class="technologies">
+      <div class="technologies ">
         <template v-for="(item, index) in technologies" :key="index">
           <span  :style="getStyle(item.color)">{{ item.name }}</span>
         </template>
@@ -56,7 +56,7 @@
     },
     methods:{
       getStyle(color){
-        return `background-color: ${color}; border-radius: 5px; padding: 2px 12px 2px 12px; color: white; margin: 0 10px 0 10px;`
+        return `font-size:11px; background-color: ${color}; border-radius: 5px; padding: 2px 12px 2px 12px; color: white; margin: 0 10px 0 10px;`
       }
     }
 
@@ -81,5 +81,18 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
+}
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.technologies span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
 }
 </style>

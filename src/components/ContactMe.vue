@@ -9,19 +9,20 @@
       <div class="row">
         <div class="col-5">
           <ContactCard
-            url_image="https://via.placeholder.com/50"
+           :url_image="require('@/assets/mail.png')"
             via="Email"
             data="ablanco837@gmail.com"
           >
           </ContactCard>
           <ContactCard
-            url_image="https://via.placeholder.com/50"
+          :url_image="require('@/assets/phone-call.png')"
+
             via="Phone"
             data="60817070"
           >
           </ContactCard>
           <ContactCard
-            url_image="https://via.placeholder.com/50"
+          :url_image="require('@/assets/whatsapp.png')"
             via="Whatsapp"
             data="https://wa.me/60817070"
           >

@@ -3,7 +3,7 @@
         <div class="container mt-5 mb-5 py-5">
             <div class="row aling-items-center">
                 <div class="img-container col-lg-4 col-md-4">
-                    <img src="https://via.placeholder.com/180" alt="profile">
+                    <img src="../assets/profile.jpg" alt="profile" width="200" height="200">
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <h3>ABOUT ME</h3>

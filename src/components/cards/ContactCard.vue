@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 img-container">
-                <img :src=url_image alt="">
+            <div class="col-md-2 img-container p-1">
+                <img :src=url_image :alt=via width="35" height="35">
             </div>
             <div class="col-md-10">
                 <h6>{{ via }}</h6>
@@ -23,9 +23,9 @@ export default {
 }
 
 </script>
-<style>
+<style scoped>
 .img-container img{
-    border-radius: 50%;
-    border: 1px solid #EE6C4D;
+    width: 45px;
+    height: 45px;
 }
 </style>

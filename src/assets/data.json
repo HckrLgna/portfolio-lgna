@@ -2,10 +2,10 @@
     "projects":[
         {
             "title": "Personal Portfolio",
-            "description": "This is a project",
-            "image": "project1.jpg",
+            "description": "This is personal portfolio, where I show my projects and my skills",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1728614991/portfolio/ee4i6ixps2rs661iodp7.png",
             "url_live": "https://www.google.com",
-            "url_github": "https://www.google.com",
+            "url_github": "https://github.com/HckrLgna/portfolio-lgna.git",
             "technologies": [
                 {
                     "name": "VueJS",
@@ -18,41 +18,74 @@
             ]
         },
         {
-            "title": "Project 1",
-            "description": "This is a project",
-            "image": "project1.jpg",
+            "title": "Application to complaint in the city",
+            "description": "Denunciango is a application web and mobile where the people can complaint about the city",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1728614669/portfolio/jebumewcc0dyj84nqmcp.png",
             "url_live": "https://www.google.com",
-            "url_github": "https://www.google.com",
+            "url_github": "https://github.com/HckrLgna/denunciango_front.git",
             "technologies": [
                 {
-                    "name": "HTML",
+                    "name": "VueJS",
                     "color": "#E44D26"
+                },{
+                    "name": "Firebase",
+                    "color": "#F2C230"
+                },{
+                    "name": "NodeJS",
+                    "color": "#8CC84B"
+                },{
+                    "name": "MongoDB",
+                    "color": "#4DB33D"
+                },{
+                    "name": "Flutter",
+                    "color": "#02569B"
                 }
             ]
         },
         {
-            "title": "Project 1",
-            "description": "This is a project",
-            "image": "project1.jpg",
+            "title": "Sistema de Gestion Clinicas",
+            "description": "This project manage the clinical history of the patients",
+            "url_image": "",
             "url_live": "https://www.google.com",
             "url_github": "https://www.google.com",
             "technologies": [
                 {
-                    "name": "HTML",
-                    "color": "#E44D26"
+                    "name": "laravel",
+                    "color": "#4DB33D"
                 }
             ]
         },
         {
-            "title": "Project 1",
-            "description": "This is a project",
-            "image": "project1.jpg",
+            "title": "Photo manager app with AI",
+            "description": "This project manage the photos of the user and use AI to classify the photos",
+            "url_image": " ",
             "url_live": "https://www.google.com",
-            "url_github": "https://www.google.com",
+            "url_github": "https://github.com/HckrLgna/e-comerceSW.git",
             "technologies": [
                 {
-                    "name": "HTML",
+                    "name": "Laravel",
                     "color": "#E44D26"
+                },
+                {
+                    "name":"AWS-Rekognition",
+                    "color": "#FF9900"
+                }
+            ]
+        },
+        {
+            "title": "Drawer app in Real Time",
+            "description": "This project is a drawer app in real time, where the users can draw in the same canvas",
+            "url_image": " ",
+            "url_live": "https://www.google.com",
+            "url_github": "https://github.com/HckrLgna/platform-SW.git",
+            "technologies": [
+                {
+                    "name": "Laravel",
+                    "color": "#E44D26"
+                },
+                {
+                    "name":"Sockets",
+                    "color": "#FF9900"
                 }
             ]
         }
