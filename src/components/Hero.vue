@@ -29,7 +29,7 @@
                   :variant="'outline'"
                   :size="'sm'"
                   :fullWidht="true"
-                  >About me</Button
+                  >Contact me</Button
                 >
               </div>
             </div>
