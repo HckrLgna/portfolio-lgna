@@ -1,13 +1,11 @@
 <template>
   <div>
     <NavBar />
-    <div class="container-fluid mt-5 pt-5">
       <Hero />
       <services />
-      <Projects />
       <AboutMe />
+      <Projects />
       <ContactMe />
-    </div>
     <Footer></Footer>
   </div>
 </template>
