@@ -1,23 +1,8 @@
 {
     "projects":[
+        
         {
-            "title": "Personal Portfolio",
-            "description": "This is personal portfolio, where I show my projects and my skills",
-            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1728614991/portfolio/ee4i6ixps2rs661iodp7.png",
-            "url_live": "https://www.google.com",
-            "url_github": "https://github.com/HckrLgna/portfolio-lgna.git",
-            "technologies": [
-                {
-                    "name": "VueJS",
-                    "color": "#3F8E8B"
-                },
-                {
-                    "name": "Firebase",
-                    "color": "#F2C230"
-                }
-            ]
-        },
-        {
+            "category":"web",
             "title": "Application to complaint in the city",
             "description": "Denunciango is a application web and mobile where the people can complaint about the city",
             "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1728614669/portfolio/jebumewcc0dyj84nqmcp.png",
@@ -43,9 +28,10 @@
             ]
         },
         {
+            "category":"web",
             "title": "Sistema de Gestion Clinicas",
             "description": "This project manage the clinical history of the patients",
-            "url_image": "",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1744052723/portfolio/wdcp6a7ifgadkitkad5l.png",
             "url_live": "https://www.google.com",
             "url_github": "https://www.google.com",
             "technologies": [
@@ -56,6 +42,7 @@
             ]
         },
         {
+            "category":"web",
             "title": "Photo manager app with AI",
             "description": "This project manage the photos of the user and use AI to classify the photos",
             "url_image": " ",
@@ -73,6 +60,7 @@
             ]
         },
         {
+            "category":"web",
             "title": "Drawer app in Real Time",
             "description": "This project is a drawer app in real time, where the users can draw in the same canvas",
             "url_image": " ",

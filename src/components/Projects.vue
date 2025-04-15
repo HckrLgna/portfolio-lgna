@@ -1,9 +1,53 @@
 <template>
     <section class="sky-blue">
-        <div class="container" >
+        <div class="container">
             <div class="row ">
-                <div class="section-title p-2 m-2">
-                    <h2 class="about-heading">Projects</h2>
+                <div class="col-12 d-flex justify-content-center section-title">
+                    <h3>My Project</h3>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="filters">
+                        <ul>
+                            <li>
+                                <a 
+                                    href="#!" 
+                                    :class="{active: activeCategory === 'all' }"  
+                                    @click="setActiveCategory('all')"
+                                >
+                                    All
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#!" 
+                                    :class="{active: activeCategory === 'web'}"
+                                    @click="setActiveCategory('web')"
+                                >
+                                    Web
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#!"
+                                    :class="{active: activeCategory === 'mobile'}"
+                                    @click="setActiveCategory('mobile')" 
+                                >
+                                    Mobile
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#!" 
+                                    :class="{active: activeCategory === 'design'}"
+                                    @click="setActiveCategory('design')"
+                                >
+                                    Design
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -32,17 +76,25 @@ export default {
     },
     data(){
         return {
-            projects: Data.projects
+            projects: Data.projects,
+            activeCategory: 'all',  
         }
     },
     methods: {
-        getProjects(){
-            console.log(this.projects);
-            return this.projects;
+        setActiveCategory(category){
+            this.activeCategory = category;
+            this.getProjects(category);
+        },
+        getProjects(category){
+            if(category === 'all'){
+                this.projects = Data.projects;
+            }else{
+                this.projects = Data.projects.filter(project => project.category === category);
+            }
         }
     },
     created(){
-        this.getProjects();
+        this.getProjects(this.activeCategory);  
     }
 
 }
@@ -51,14 +103,23 @@ export default {
 <style scoped>
 .sky-blue{
     background: #f9f9ff;
-    text-align: left;
-    margin: 100px 0;
 }
 
-.section-title{
-    margin-top: 20px;
-    padding-top:20px;
-    text-align: center;
+.section-title h3{
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.section-title h3::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background: #e45451;
+  left: 0;
+  bottom: -2px;
 }
 .section-title h2{
     position: relative;
@@ -68,15 +129,24 @@ export default {
     font-size: 45px;
     line-height: 44px;
 }
-.section-title h2::before {
-    content: '';
-    position: absolute;
-    bottom: -30px; /* Adjust as necessary */
-    left: 0;
-    width: 70px; /* Adjust the length of the line */
-    height: 2px;
-    background-color: #ff6347; /* Adjust color as necessary */
-     
+.filters ul{
+    margin-bottom: 30px;
 }
+.filters ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.filters ul li a {
+    text-decoration: none;
+    color: #222;
+}
+.filters ul li a.active {
+    color: #e45451;
+    font-weight: 700;
+}
+.filters ul li a:hover {
+    font-weight: 700;
+}
+
 
 </style>

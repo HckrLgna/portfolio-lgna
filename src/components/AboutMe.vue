@@ -57,6 +57,7 @@ export default {
 </script>
 <style scoped>
 * {
+  background: #F9F9FF;
   color: #3a4554;
 }
 .img-container {
