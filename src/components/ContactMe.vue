@@ -97,9 +97,7 @@ export default {
 </script>
 <style scoped>
 .sky-blue {
-  background: #f9f9ff;
   text-align: left;
-  margin: 100px 0;
 }
 .section-title {
   font-weight: 700;
