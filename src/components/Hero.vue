@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="home" class="customize-background">
     <div class="container mt-5 pt-5">
       <div class="row align-items-center">
         <div class="col-md-8 col-sm-12 col-lg-8 h-100 px-4">
@@ -113,7 +113,7 @@ export default {
 };
 </script>
 <style scoped>
-* {
+.customize-background {
   background: #f9f9ff;
 }
 

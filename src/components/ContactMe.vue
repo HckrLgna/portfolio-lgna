@@ -1,10 +1,8 @@
 <template>
-  <section class="sky-blue">
+  <section id="contact" class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="section-title p-2 m-2">
-          <h2 class="about-heading">Contact Me</h2>
-        </div>
+      <div class="row py-3 text-center">
+          <h2>Contact Me</h2>
       </div>
       <div class="row">
         <div class="col-5">
@@ -96,9 +94,7 @@ export default {
 };
 </script>
 <style scoped>
-.sky-blue {
-  text-align: left;
-}
+ 
 .section-title {
   font-weight: 700;
   font-size: 45px;

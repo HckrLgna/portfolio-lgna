@@ -1,5 +1,5 @@
 <template>
-    <section class="sky-blue">
+    <section id="projects" class="sky-blue">
         <div class="container">
             <div class="row ">
                 <div class="col-12 d-flex justify-content-center section-title">
@@ -103,6 +103,7 @@ export default {
 <style scoped>
 .sky-blue{
     background: #f9f9ff;
+    padding-bottom: 50px;
 }
 
 .section-title h3{

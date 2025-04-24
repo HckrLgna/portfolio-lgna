@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about-me">
     <div class="container p-5   ">
       <div class="row aling-items-center">
         <div class="img-container col-lg-5 col-md-6 my-auto">
@@ -22,15 +22,18 @@
             <li>Phone: +59160817070</li>
           </ul>
           <div class="row">
-            <Button
-              class="radius-btn"
-              :color="'danger'"
-              :size="'md'"
-              :fullWidht="false"
-              :variant="'outline'"
-              @click="downloadFile"
-              >Download CV</Button
-            >
+            <div class="col-auto">
+              <Button
+                class="radius-btn"
+                :color="'danger'"
+                :size="'md'"
+                :fullWidht="false"
+                :variant="'outline'"
+                @click="downloadFile"
+                >Download CV</Button
+              >
+
+            </div>
           </div>
         </div>
       </div>

@@ -22,20 +22,35 @@
             v-for="(item, index) in navItems"
             :key="index"
           >
-            <router-link class="nav-link nav-link-customize" :to="item.to">{{
-              item.text
-            }}</router-link>
+            <router-link class="nav-link nav-link-customize" :to="item.to">
+              {{ $t(item.text) }}
+            </router-link>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Languaje
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ currentLanguage === "en" ? "English" : "Español" }}
             </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
-          </ul>
-        </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#" @click="changeLanguage('en')"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" @click="changeLanguage('es')"
+                  >Español</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -52,31 +67,37 @@ export default {
   data() {
     return {
       navItems: [
-        { text: "Home", to: "/" },
-        { text: "Services", to: "/" },
-        { text: "Projects", to: "/" },
-        { text: "Resume", to: "/" },
-        { text: "About Me", to: "/" },
-        { text: "Contact", to: "/" },
+        { text: "navbar.home", to: "#home" },
+        { text: "navbar.services", to: "#services" },
+        { text: "navbar.projects", to: "#projects" },
+        { text: "navbar.resume", to: "#resume" },
+        { text: "navbar.about", to: "#about-me" },
+        { text: "navbar.contact"  , to: "#contact" },
       ],
+      currentLanguage: "en", // Default language
     };
   },
-  mounted(){
-    window.addEventListener('scroll', this.handleScroll);
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
   beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
-      const navbar = document.querySelector('.navbar');
+      const navbar = document.querySelector(".navbar");
       if (window.scrollY > 50) {
-        navbar.classList.add('navbar-shadow');
+        navbar.classList.add("navbar-shadow");
       } else {
-        navbar.classList.remove('navbar-shadow');
+        navbar.classList.remove("navbar-shadow");
       }
     },
-  },
+  changeLanguage(lang){
+    this.currentLanguage = lang;
+    this.$i18n.locale = lang; // Change the locale in Vue I18n
+    
+  }
+}
 };
 </script>
 
@@ -106,7 +127,7 @@ export default {
   width: 100%;
   left: 0;
 }
-.navbar-shadow{
+.navbar-shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }

@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import i18n from './dictionary';
 
 // Añade todos los iconos sólidos a la biblioteca
 library.add(fas);
@@ -18,4 +19,5 @@ app.component('font-awesome-icon', FontAwesomeIcon);
 
 app.use(store)
     .use(router)
+    .use(i18n)
     .mount('#app')
