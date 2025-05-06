@@ -1,5 +1,5 @@
 <template>
-  <section id="services">
+  <section id="services" class="my-3 py-3">
     <div class="container mt-5 mb-5">
       <div class="row align-items-center">
         <div class="col-lg-5 px-5">

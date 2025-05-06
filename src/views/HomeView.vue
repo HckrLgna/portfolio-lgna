@@ -2,6 +2,7 @@
       <Hero />
       <services />
       <AboutMe />
+      <Resume />
       <Projects />
       <Banner />
       <ContactMe />
@@ -17,12 +18,14 @@ import Projects from '@/components/Projects.vue'
 import AboutMe  from '@/components/AboutMe.vue'
 import ContactMe from '@/components/ContactMe.vue'
 import Banner from '@/components/Banner.vue'
+import Resume from '@/components/Resume.vue' 
 export default {
   name: 'HomeView',
   components: {
     Hero,
     Services,
     Projects,
+    Resume,
     Banner,
     Footer,
     AboutMe,

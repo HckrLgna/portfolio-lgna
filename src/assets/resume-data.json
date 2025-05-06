@@ -1,0 +1,32 @@
+{
+    "education": [
+        {
+            "date": "2019-2024",
+            "title": "Bachelor in Computer Science",
+            "place": "UAGRM university",
+            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+        }
+    ],
+    "experience": [
+        {
+            "date": "2019-2024",
+            "title": "Software Developer",
+            "place": "UAGRM university",
+            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+        }
+    ],
+    "skills": [
+        {
+            "title": "Vuejs",
+            "percentaje": 90
+        }
+    ],
+    "awards": [
+        {
+            "date": "2019-2024",
+            "title": "Software Developer",
+            "place": "UAGRM university",
+            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+        }
+    ]
+}

@@ -73,22 +73,22 @@ export default {
   height: auto;
 }
 
-.content h3 {
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-}
-.content h3::after {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 2px;
-  background: #e45451;
-  left: 0;
-  bottom: 0px;
-}
+  .content h3 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  .content h3::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 2px;
+    background: #e45451;
+    left: 0;
+    bottom: 0px;
+  }
 .radius-btn {
   padding-left: 30px;
   padding-right: 30px;
