@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-2">
                 <div class="d-flex justify-content-center align-items-center mt-2">
-                    <font-awesome-icon class="icon" :icon="icon" />
+                    <font-awesome-icon class="icon" icon="graduation-cap" />
                 </div>
             </div>
             <div class="col-10">
@@ -41,7 +41,7 @@ export default{
         }
     },
     data(){
-        
+
     }
 }
 </script>

@@ -73,7 +73,7 @@ export default {
         SingleResume,
     },
     data(){
-        const icon = "";
+        const icon = "graduation-cap";
         const date = new Date();
         const title = "";
         const place = "";

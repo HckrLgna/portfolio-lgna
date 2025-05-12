@@ -4,15 +4,27 @@
             "date": "2019-2024",
             "title": "Bachelor in Computer Science",
             "place": "UAGRM university",
-            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+            "description": "I have studied Engineering Informatics at the Universidad Autónoma Gabriel René Moreno, gaining expertise in software development, databases, automation, and programming."
+        },
+         {
+            "date": "2024-2025",
+            "title": "CERTIFICATE PROGRAM",
+            "place": "School of Engineering UAGRM",
+            "description": "I completed the DevOps Essential Certificate Program at the School of Engineering, gaining fundamental knowledge in DevOps principles, automation, and software deployment. I worked with tools like Docker, Kubernetes, Jenkins, and Git, improving CI/CD workflows and optimizing system reliability for scalable software delivery."
         }
     ],
     "experience": [
         {
-            "date": "2019-2024",
-            "title": "Software Developer",
-            "place": "UAGRM university",
-            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+            "date": "2024-2025",
+            "title": "Full-Stack Developer | RMB Corp (Freelance) ",
+            "place": "Remote",
+            "description": "Designed and developed custom web applications for commercial stores, enhancing user experience and operational efficiency. Focused on frontend and backend integration, ensuring seamless functionality and an intuitive interface for business clients."
+        },
+        {
+            "date": "2023",
+            "title": "Frontend & Mobile Application Developer",
+            "place": "Centro Boliviano Americano Santa Cruz - Departamento de Sistemas",
+            "description": "Led the development and implementation of an innovative mobile application for efficient data management and notifications. Conducted continuous improvements and advanced website maintenance, optimizing performance and user accessibility."
         }
     ],
     "skills": [
@@ -23,10 +35,22 @@
     ],
     "awards": [
         {
-            "date": "2019-2024",
-            "title": "Software Developer",
+            "date": "2022",
+            "title": "1st Place - Hackathon FICCT v3 (2022)",
             "place": "UAGRM university",
-            "description": "LoremEu adipisicing officia nostrud nulla.Incididunt aliquip sunt voluptate proident aute anim Lorem dolor irure ipsum ut non. Culpa duis pariatur nisi eiusmod sit et eiusmod adipisicing enim ullamco nostrud ex aliqua minim. Amet velit qui adipisicing non ipsum est quis cillum anim sint. Velit irure ullamco quis dolore reprehenderit in."
+            "description": "- Developed a mobile app for monitoring and controlling solid waste, contributing to environmental awareness and sustainable waste management."
+        },
+        {
+            "date": "2023",
+            "title": "1st Place - Hackathon FICCT v4 (2023) Digital Services for Citizens",
+            "place": "UAGRM university",
+            "description": "Led the creation of a mobile app for early-warning alerts, enhancing public safety through real-time notifications and risk management tools."
+        },
+        {
+            "date": "2018",
+            "title": "1st Place - Scientific Fair FICCT",
+            "place": "UAGRM university",
+            "description": "- Designed and implemented a RADIUS authentication server to improve network monitoring and security within academic environments, optimizing access control across Wi-Fi networks."
         }
     ]
 }

@@ -43,10 +43,10 @@
         },
         {
             "category":"web",
-            "title": "Photo manager app with AI",
-            "description": "This project manage the photos of the user and use AI to classify the photos",
-            "url_image": " ",
-            "url_live": "https://www.google.com",
+            "title": "Photo manager app with AWS Rekognition",
+            "description": "This project is a web application that helps users manage their photo collections efficiently. By leveraging AWS Rekognition, the app uses artificial intelligence to automatically classify and tag photos based on objects, scenes, and people. It simplifies photo organization, making it easier for users to search and filter their images.",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1747067427/portfolio/kbf3nmrxacplqivsmetb.png",
+            "url_live": "#",
             "url_github": "https://github.com/HckrLgna/e-comerceSW.git",
             "technologies": [
                 {
@@ -56,6 +56,13 @@
                 {
                     "name":"AWS-Rekognition",
                     "color": "#FF9900"
+                },
+                {
+                    "name":"AWS-S3",
+                    "color": "#569A31"
+                },{
+                    "name":"AWS-EC2",
+                    "color": "#FF9900"
                 }
             ]
         },
@@ -63,7 +70,7 @@
             "category":"web",
             "title": "Drawer app in Real Time",
             "description": "This project is a drawer app in real time, where the users can draw in the same canvas",
-            "url_image": " ",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1747065780/portfolio/jwdao3a79ynz1cdtgcus.png",
             "url_live": "https://www.google.com",
             "url_github": "https://github.com/HckrLgna/platform-SW.git",
             "technologies": [
@@ -73,6 +80,24 @@
                 },
                 {
                     "name":"Sockets",
+                    "color": "#FF9900"
+                }
+            ]
+        },
+        {
+            "category":"web",
+            "title": "CRM Real State",
+            "description": "This project is a CRM project, ",
+            "url_image": "https://res.cloudinary.com/duxyfwhfo/image/upload/v1747064670/portfolio/xozkoh8rhjscumzswnf2.png",
+            "url_live": "https://360realestate.com.bo/",
+            "url_github": "https://github.com/HckrLgna/crm-360-real-state.git",
+            "technologies": [
+                {
+                    "name": "Laravel",
+                    "color": "#E44D26"
+                },
+                {
+                    "name":"Jobs",
                     "color": "#FF9900"
                 }
             ]

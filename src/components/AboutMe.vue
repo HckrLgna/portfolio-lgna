@@ -9,8 +9,8 @@
           <h3>About Me</h3>
 
           <p>
-            I graduated from Chonnam National University three months ago with a
-            bachelor's in Computer Engineering. My experiences in school gave me
+            I graduated from Gabriel Rene Moreno University six months ago with a
+            bachelor's in Computer Science. My experiences in school gave me
             strong communication and networking skills, which are crucial for
             event planning. I create successful responsive websites that are
             fast, easy to use, and built with best practices.
