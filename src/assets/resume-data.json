@@ -29,9 +29,18 @@
     ],
     "skills": [
         {
+            "title": "Nodejs",
+            "percentajeSkill": 70
+        },
+        {
             "title": "Vuejs",
-            "percentaje": 90
+            "percentajeSkill": 90
+        },
+        {
+            "title": "Laravel",
+            "percentajeSkill": 80
         }
+
     ],
     "awards": [
         {

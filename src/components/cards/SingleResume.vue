@@ -16,7 +16,7 @@
     </div>
 </template>
 <script>
-export default{
+    export default{
     name: "SingleResume",
     props: {
         icon: {

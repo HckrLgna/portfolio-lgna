@@ -49,15 +49,26 @@
                 </div>
                 <div class="col-9">
                     <h5 class="mb-3 pb-3 fw-bold">{{ activeSection }}</h5>
-                    <SingleResume 
-                        v-for="(data, index) in dataList" 
-                        :key="index"
-                        :icon="data.icon"
-                        :date="data.date"
-                        :title="data.title"
-                        :place="data.place"
-                        :description="data.description"
-                    ></SingleResume>
+                    
+                    <div v-if="activeSection==='Skills'">
+                        <SkillsResume
+                            v-for="(data, index) in dataSkills"
+                            :key="index"
+                            :titleSkill="data.title"
+                            :percentageSkill="data.percentageSkill"
+                        ></SkillsResume>
+                    </div>
+                    <div v-else>
+                        <SingleResume 
+                            v-for="(data, index) in dataList" 
+                            :key="index"
+                            :icon="data.icon"
+                            :date="data.date"
+                            :title="data.title"
+                            :place="data.place"
+                            :description="data.description"
+                        ></SingleResume>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,11 +77,13 @@
 </template>
 <script>
 import SingleResume from "@/components/cards/SingleResume.vue";
+import SkillsResume from "./cards/SkillsResume.vue";
 import ResumeData from "@/assets/resume-data.json"
 export default {
     name: "Resume",
     components: {
         SingleResume,
+        SkillsResume,
     },
     data(){
         const icon = "graduation-cap";
