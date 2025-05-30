@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  imageName: 'my-app'
-  registry: 'portfolioapp.azurecr.io'
+  imageName: my-app
+  registry: portfolioapp.azurecr.io
 
 steps:
   - task: Docker@2
@@ -19,7 +19,7 @@ steps:
     inputs:
       command: build
       Dockerfile: '**/Dockerfile'
-      repository: 'portfolioapp.azurecr.io/my-app'
+      repository: $(registry)/$(imageName)
       tags: | 
         $(Build.BuildId)
 
@@ -30,7 +30,7 @@ steps:
     displayName: 'Push image to ACR'
     inputs: 
       command: push
-      repository: 'portfolioapp.azurecr.io/my-app'
+      repository: $(registry)/$(imageName)
       tags: |
         $(Build.BuildId)
       containerRegistry: 'portfolioapp-acr-connection'
