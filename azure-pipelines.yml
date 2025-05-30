@@ -20,16 +20,16 @@ steps:
     inputs:
       command: build
       Dockerfile: '**/Dockerfile'
+      repository: $(registry)/$(imageName)
       tags: | 
         $(Build.BuildId)
-      repository: $(imageName)
 
 
   - task: Docker@2
     displayName: 'Push image to ACR'
     inputs: 
       command: push
-      repository: $(imageName)
+      repository: $(registry)/$(imageName)
       tags: |
         $(Build.BuildId)
       containerRegistry: 'portfolioapp-acr-connection'
@@ -44,5 +44,5 @@ steps:
         az container update \
           --resource-group freelance-work \
           --name myportfolioapp \
-          --image portfolioapp.azurecr.io/my-app:$(Build.BuildId)
+          --image $(registry)/$(imageName):$(Build.BuildId)
 
