@@ -34,7 +34,7 @@ steps:
     displayName: 'Push image to ACR'
     inputs: 
       command: push
-      repository: $(registry)/$(imageName)
+      repository: $(imageName)
       tags: |
         $(Build.BuildId)
       containerRegistry: 'portfolioapp-acr-connection'
