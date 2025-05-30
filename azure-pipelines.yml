@@ -32,7 +32,7 @@ steps:
       repository: $(imageName)
       tags: |
         $(Build.BuildId)
-      containerRegistry: 'portfolioapp.azurecr.io'
+      containerRegistry: 'portfolioapp-acr-connection'
       
   - task: AzureCLI@2
     displayName: 'Deploy to Azure Container Instance'
