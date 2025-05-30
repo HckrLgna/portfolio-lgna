@@ -29,6 +29,7 @@
                   :variant="'outline'"
                   :size="'sm'"
                   :fullWidht="true"
+                  @click= "scrollToContact"
                   >Contact me</Button
                 >
               </div>
@@ -107,6 +108,12 @@ export default {
         link.href = "/cv.pdf"; // Path to your CV file  
         link.download = "cv.pdf";
         link.click();
+    },
+    scrollToContact(){
+      const section = document.getElementById('contact');
+      if(section){
+        section.scrollIntoView({behavior: 'smooth'});
+      }
     }
   }
 
