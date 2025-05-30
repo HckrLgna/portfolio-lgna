@@ -4,16 +4,46 @@
 # https://aka.ms/yaml
 
 trigger:
-- none
+- main
+- deployment
 
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables: 
+  imageName: 'my-app'
+  registry: portfolioapp.azurecr.io
+   
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+steps:
+  - task: Docker@2
+    displayName: 'Build Docker Image'
+    inputs:
+      command: build
+      Dockerfile: '**/Dockerfile'
+      tags: | 
+        $(Build.BuildId)
+      repository: $(imageName)
+
+
+  - task: Docker@2
+    displayName: 'Push image to ACR'
+    inputs: 
+      command: push
+      repository: $(imageName)
+      tags: |
+        $(Build.BuildId)
+      containerRegistry: 'portfolioapp-acr-connection'
+      
+  - task: AzureCLI@2
+    displayName: 'Deploy to Azure Container Instance'
+    inputs:
+      azureSubscription: 'AzureConnection' # Cambia esto por el nombre de tu conexión de servicio a Azure
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az container update \
+          --resource-group freelance-work \
+          --name myportfolioapp \
+          --image portfolioapp.azurecr.io/my-app:$(Build.BuildId)
+
