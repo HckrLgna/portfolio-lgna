@@ -9,10 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables: 
+variables:
   imageName: 'my-app'
-  registry: portfolioapp.azurecr.io
-   
+  registry: 'portfolioapp.azurecr.io'
 
 steps:
   - task: Docker@2
@@ -24,7 +23,6 @@ steps:
       tags: | 
         $(Build.BuildId)
 
-
   - task: Docker@2
     displayName: 'Push image to ACR'
     inputs: 
@@ -33,16 +31,4 @@ steps:
       tags: |
         $(Build.BuildId)
       containerRegistry: 'portfolioapp-acr-connection'
-      
-  - task: AzureCLI@2
-    displayName: 'Deploy to Azure Container Instance'
-    inputs:
-      azureSubscription: 'AzureConnection' # Cambia esto por el nombre de tu conexión de servicio a Azure
-      scriptType: bash
-      scriptLocation: inlineScript
-      inlineScript: |
-        az container update \
-          --resource-group freelance-work \
-          --name myportfolioapp \
-          --image $(registry)/$(imageName):$(Build.BuildId)
 
