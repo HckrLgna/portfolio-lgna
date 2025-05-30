@@ -16,8 +16,8 @@ variables:
 steps:
   - script: |
       echo "Building Docker image $(registry)/$(imageName):$(Build.BuildId)"
-      displayName: 'Echo Docker Image Info'
-      
+    displayName: 'Echo Docker Image Info'
+
   - task: Docker@2
     displayName: 'Build Docker Image'
     inputs:
