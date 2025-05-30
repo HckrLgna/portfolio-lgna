@@ -1,5 +1,5 @@
 <template>
-    <section class="my-3 py-3">
+    <section id="resume" class="my-3 py-3">
         <div class="container">
             <di class="row" >
                 <div class="col d-flex justify-content-center p-1 m-1 content">

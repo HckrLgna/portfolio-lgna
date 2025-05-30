@@ -39,3 +39,15 @@ steps:
         $(Build.BuildId)
       containerRegistry: 'portfolioapp-acr-connection'
 
+  - task: AzureCLI@2
+    displayName: 'Update Azure Container Instance'
+    inputs:
+      azureSubscription: 'AzureConnection' # tu service connection
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az container update \
+          --resource-group freelance-work \
+          --name myportfolioapp \
+          --image $(registry)/$(imageName):$(Build.BuildId)
+
