@@ -6,7 +6,7 @@
       </div>
       <div class="row">
         <!-- Contact Cards -->
-        <div class="col-12 col-md-5 mb-4">
+        <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
           <ContactCard
             :url_image="require('@/assets/mail.png')"
             via="Email"
@@ -24,7 +24,7 @@
           />
         </div>
         <!-- Contact Form -->
-        <div class="col-12 col-md-7">
+        <div class="col-lg-7 offset-lg-2 col-md-8">
           <form
             id="contact-form"
             class="row contact-form"

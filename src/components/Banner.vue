@@ -18,12 +18,12 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-auto">
-                    <Button
-                        class="radius-btn text-danger"
+                    <CustomButton
+                        class="radius-btn over-effect"
                         :color="'light'"
                         :size="'md'"
                         @click="downloadFile"
-                    >Hire me</Button>
+                    >Hire me</CustomButton>
 
                 </div>
             </div>
@@ -31,11 +31,11 @@
     </section>
 </template>
 <script>
-import Button from "@/components/buttons/MaterialButton.vue";
+import CustomButton from "@/components/buttons/MaterialButton.vue";
 export default {
     name: 'Banner',
     components: {
-        Button
+        CustomButton
     }
 }
 </script>
@@ -44,5 +44,13 @@ export default {
 .custom-container{
     background: #E45451;
     color: #fff;
+}
+.over-effect{
+  transition: background-color 0.3s ease;
+  color: #E45451;
+}
+.over-effect:hover{
+    background-color: #E45451;
+    color: #fff;   
 }
 </style>
